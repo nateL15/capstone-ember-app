@@ -7,7 +7,7 @@ module.exports = function (environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
-    apiHost: 'http://localhost:3000/',
+    apiHost: 'http://localhost:4741/',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -34,7 +34,7 @@ module.exports = function (environment) {
     let port = +('GA'.split('').reduce((p, c) =>
       p + c.charCodeAt().toString(16), '')
     );
-    ENV.apiHost = `https://limitless-sea-46417.herokuapp.com/`;
+    ENV.apiHost = `https://intense-meadow-84710.herokuapp.com/`;
   }
 
   if (environment === 'test') {
