@@ -1,0 +1,6 @@
+<h2>LoL Champions</h2>
+{{#link-to "index"}} Go home {{/link-to}}
+{{champion-form createChampion='createChampion'}}
+{{#each model as |champion|}}
+  <h3>{{#link-to "champion" champion}} {{champion.name}} {{/link-to}}</h3>
+{{/each}}

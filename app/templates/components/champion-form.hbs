@@ -1,0 +1,12 @@
+<h3 class="champion-header" {{action 'toggleListDetail'}}>{{champion.name}}</h3>
+
+  {{champion-edit-form champion=champion updateChamp='updateChamp'}}
+
+<ul>
+<li>{{#each champion.name as |name|}}
+    {{champion-form/name name=name}}{{/each}}</li>
+<li>{{#each champion.role as |role|}}
+  {{champion-form/role role=role}}{{/each}}</li>
+  <li>{{#each champion.guide as |guide|}}
+    {{champion-form/guide guide=guide}}{{/each}}</li>
+  </ul>
