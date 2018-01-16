@@ -1,6 +1,13 @@
-<h2>LoL Champions</h2>
 {{#link-to "index"}} Go home {{/link-to}}
-{{champion-form createChampion='createChampion'}}
-{{#each model as |champion|}}
-  <h3>{{#link-to "champion" champion}} {{champion.name}} {{/link-to}}</h3>
-{{/each}}
+
+<form {{action 'createChampion' on='submit'}}>
+<ul>
+<li>{{champion.name}}
+    Edit name: {{input type="text" value=name}}</li>
+<li>{{champion.role}}
+  Edit role: {{input type="text" value=role}}</li>
+<li>{{champion.guide}}
+    Edit guide: {{input type="text" value=guide}}</li>
+</ul>
+<button {{action "createChampion"}} class="btn btn-sm btn-primary">Save</button>
+</form>
