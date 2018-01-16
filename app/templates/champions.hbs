@@ -1,13 +1,9 @@
+<h2>Champions</h2>
 {{#link-to "index"}} Go home {{/link-to}}
-
-<form {{action 'createChampion' on='submit'}}>
-<ul>
-<li>{{champion.name}}
-    Edit name: {{input type="text" value=name}}</li>
-<li>{{champion.role}}
-  Edit role: {{input type="text" value=role}}</li>
-<li>{{champion.guide}}
-    Edit guide: {{input type="text" value=guide}}</li>
-</ul>
-<button {{action "createChampion"}} class="btn btn-sm btn-primary">Save</button>
-</form>
+{{#each model as |champion|}}
+  <h3>{{Champion.name}}</h3>
+  <ul>
+    <li>{{Champion.role}}</li>
+    <li>{{Champion.guide}}</li>
+    </ul>
+{{/each}}
