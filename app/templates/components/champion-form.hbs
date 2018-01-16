@@ -1,10 +1,6 @@
-{{#link-to "index"}} Go home {{/link-to}}
-
 <form {{action 'createChampion' on='submit'}}>
-<ul>
-<li>Edit name: {{input type="text" value=name}}</li>
-<li>Edit role: {{input type="text" value=role}}</li>
-<li>Edit guide: {{input type="text" value=guide}}</li>
-</ul>
-<button {{action "createChampion" type="Submit"}} class="btn btn-sm btn-primary">Save</button>
+  {{input value=newChampion.name placeholder="Champion"}}
+  {{input value=newChampion.role placeholder="Role"}}
+  {{input value=newChampion.guide placeholder="Guide"}}
+  <button type="submit">Save</button>
 </form>
