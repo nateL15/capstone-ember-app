@@ -2,12 +2,9 @@
 
 <form {{action 'createChampion' on='submit'}}>
 <ul>
-<li>{{champion.name}}
-    Edit name: {{input type="text" value=name}}</li>
-<li>{{champion.role}}
-  Edit role: {{input type="text" value=role}}</li>
-<li>{{champion.guide}}
-    Edit guide: {{input type="text" value=guide}}</li>
+<li>Edit name: {{input type="text" value=name}}</li>
+<li>Edit role: {{input type="text" value=role}}</li>
+<li>Edit guide: {{input type="text" value=guide}}</li>
 </ul>
 <button {{action "createChampion" type="Submit"}} class="btn btn-sm btn-primary">Save</button>
 </form>
