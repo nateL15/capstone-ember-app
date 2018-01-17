@@ -1,10 +1,10 @@
 {{#link-to "index"}} Go home {{/link-to}}
-{{champion-form createChampion='createChampion'}}
+{{champion-form createChampion="createChampion"}}
 {{#each model as |champion|}}
   <h3>{{#if champion.name}}{{champion.name}}{{/if}}</h3>
   <ul>
     <li>{{#if champion.role}}{{champion.role}}{{/if}}</li>
     <li>{{#if champion.guide}}{{champion.guide}}{{/if}}</li>
-    <button {{action 'deleteChampion' champion}}>Delete</button>
+    <button {{action "deleteChampion" champion}}>Delete</button>
     </ul>
 {{/each}}
