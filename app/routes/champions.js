@@ -12,6 +12,9 @@ export default Ember.Route.extend({
     deleteChampion(champion) {
       champion.deleteRecord()
       champion.save()
+    },
+    updateChampion(champion) {
+      champion.save()
     }
   }
 });
