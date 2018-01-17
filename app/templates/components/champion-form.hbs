@@ -1,6 +1,6 @@
 <form {{action 'createChampion' on='submit'}}>
-  {{input value=newChampion.name placeholder="Champion"}}
-  {{input value=newChampion.role placeholder="Role"}}
-  {{input value=newChampion.guide placeholder="Guide"}}
+  {{input value=newChampion.name placeholder="Champion" required="true"}}
+  {{input value=newChampion.role placeholder="Role" required="true"}}
+  {{input value=newChampion.guide placeholder="Guide" required="true"}}
   <button type="submit">Save</button>
 </form>
