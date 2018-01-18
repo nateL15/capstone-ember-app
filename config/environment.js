@@ -52,7 +52,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/capstone-ember-app';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://intense-meadow-84710.herokuapp.com/';
+    ENV.apiHost = 'https://intense-meadow-84710.herokuapp.com';
   }
 
   return ENV;
