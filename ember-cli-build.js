@@ -8,6 +8,12 @@ module.exports = function(defaults) {
       includePaths: [
         'bower_components/bootstrap-sass/assets/stylesheets'
       ]
+    },
+
+    'ember-bootstrap': {
+      'bootstrapVersion': 3,
+      'importBootstrapFont': true,
+      'importBootstrapCSS': false
     }
   });
 
