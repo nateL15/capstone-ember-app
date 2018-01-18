@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('users');
   this.route('champions');
   this.route('championupdate');
+  this.route('championview');
 });
 
 export default Router;

@@ -1,12 +1,20 @@
 {{#link-to "index"}} Go home {{/link-to}}
+<br>
+<h3>Create a new Champion</h3>
 {{champion-form createChampion="createChampion"}}
+<br>
 {{#each model as |champion|}}
-  <h3>{{#if champion.name}}{{champion.name}}{{/if}}</h3>
-  <ul>
-    <li>{{#if champion.role}}{{champion.role}}{{/if}}</li>
-    <li>{{#if champion.guide}}{{champion.guide}}{{/if}}</li>
-    <button {{action "deleteChampion" champion}}>Delete</button>
-    <br>
+    {{#bs-accordion as |acc|}}
+      {{#acc.item value="1" title=champion.name}}
       {{update-champion champion=champion updateChampion="updateChampion"}}
-</ul>
+      {{/acc.item}}
+      {{#acc.item value="2" title=champion.role}}
+      {{update-champion champion=champion updateChampion="updateChampion"}}
+      {{/acc.item}}
+      {{#acc.item value="3" title=champion.guide}}
+      {{update-champion champion=champion updateChampion="updateChampion"}}
+      {{/acc.item}}
+      {{/bs-accordion}}
+      <button {{action "deleteChampion" champion}}>Delete</button>
+      <br>
 {{/each}}
