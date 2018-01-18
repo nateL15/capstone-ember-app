@@ -9,10 +9,10 @@
       {{update-champion champion=champion updateChampion="updateChampion"}}
       {{/acc.item}}
       {{#acc.item value="2" title=champion.role}}
-      {{update-champion champion=champion updateChampion="updateChampion"}}
+      {{update-role champion=champion updateChampion="updateChampion"}}
       {{/acc.item}}
       {{#acc.item value="3" title=champion.guide}}
-      {{update-champion champion=champion updateChampion="updateChampion"}}
+      {{update-guide champion=champion updateChampion="updateChampion"}}
       {{/acc.item}}
       {{/bs-accordion}}
       <button {{action "deleteChampion" champion}}>Delete</button>
