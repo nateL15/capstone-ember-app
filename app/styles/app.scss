@@ -2,3 +2,63 @@
 @import 'bootstrap/theme';
 
 @import "ember-bootstrap/bootstrap";
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('../fonts/antonio/antonio-light-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html, body {
+  margin: 0px;
+}
+
+html {
+  font-family: 'antoniolight', sans-serif;
+  background: #d3d3d3;
+}
+
+body {
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+    padding: 0px;
+    border: 2px solid #888;
+    border-radius: 12px;
+    background-color: #999;
+}
+
+li > strong, h2 > strong {
+  font-family: 'ds-digitalnormal', monospace;
+  font-size: 130%;
+  letter-spacing: 0;
+}
+
+#navigation {
+  font-family: helvetica;
+  padding: 0px;
+}
+
+#navbar-header {
+  background: #d3d3d3
+}
+
+h1,h2 {
+  text-align: center;
+  background-color: #d3d3d3;
+  color: #585050;
+  margin: 0px;
+  padding: 10px;;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 1px black,
+               2px 2px 1px #585050;
+}
+
+h1 {
+  border-radius: 8px 8px 0 0;
+  padding-top: 20px;
+}
